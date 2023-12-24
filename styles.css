@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    background-color: rgb(26, 0, 40);
+    color: white;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+.banner img {
+    width: 100vw;
+    aspect-ratio: 3/1;
+}
+
+.picture img {
+    position: absolute;
+    transform: translate(3vw, -14vw);
+    width: 25vw;
+    border-radius: 100vw;
+    border: 1vw solid black;
+}
+
+.achievements {
+    height: 10vw;
+    display: inline-flex;
+    right: 0;
+    justify-content: flex-end;
+    border-radius: 100vw;
+    position: absolute;
+    padding: 1vw;
+    margin-right: 3vw;
+    margin-top: 1vw;
+}
+
+.achievements::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to top, transparent, black);
+    border-radius: 100vw;
+    z-index: -1; /* Place the pseudo-element behind the content */
+}
+
+.achievements img {
+    height: 10vw;
+    width: 10vw;
+    border-radius: 100vw;
+    margin-left: 1vw;
+}
+
+.achievements img:first-child {
+    margin: 0;
+}
+
+.identity {
+    position: relative;
+    margin: 3vw;
+    margin-top: 14vw;
+    padding: 1vw;
+}
+
+.identity::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to top, transparent, black);
+    border-radius: 3vw;
+    z-index: -1; /* Place the pseudo-element behind the content */
+}
+
+.identity h1 {
+    margin: 1vw;
+    padding: 1vw;
+}
+
+.identity p {
+    margin-left: 2vw;
+}
+
+.about_me {
+    position: relative;
+    margin: 3vw;
+    margin-top: 14vw;
+    padding: 1vw;
+}
+
+.about_me::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to top, transparent, black);
+    border-radius: 3vw;
+    z-index: -1; /* Place the pseudo-element behind the content */
+}
+
+.about_me h2 {
+    margin: 1vw;
+    padding: 1vw;
+}
+
+.about_me p {
+    margin-left: 2vw;
+}

@@ -17,8 +17,8 @@ body::-webkit-scrollbar {
 
 .picture img {
     position: absolute;
-    transform: translate(3vw, -15vw);
-    width: 27vw;
+    transform: translate(3vw, -17vw);
+    width: 29vw;
     border-radius: 100vw;
     border: 1vw solid black;
 }

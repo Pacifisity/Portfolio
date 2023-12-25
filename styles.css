@@ -1,7 +1,8 @@
 body {
     margin: 0;
-    background-color: rgb(26, 0, 40);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/borrowed_purple_tile.jpg);
     color: white;
+    backdrop-filter: blur(10px);
 }
 
 body::-webkit-scrollbar {
@@ -11,6 +12,7 @@ body::-webkit-scrollbar {
 .banner img {
     width: 100vw;
     aspect-ratio: 3/1;
+    border-bottom: 1vw solid black;
 }
 
 .picture img {
@@ -41,9 +43,8 @@ body::-webkit-scrollbar {
     right: 0;
     bottom: 0;
     left: 0;
-    background: linear-gradient(to top, transparent, black);
-    border-top-right-radius: 5vw;
-    border-top-left-radius: 5vw;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), black);
+    border-radius: 5vw;
     z-index: -1; /* Place the pseudo-element behind the content */
 }
 
@@ -73,9 +74,8 @@ body::-webkit-scrollbar {
     right: 0;
     bottom: 0;
     left: 0;
-    background: linear-gradient(to top, transparent, black);
-    border-top-right-radius: 2vw;
-    border-top-left-radius: 2vw;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), black);
+    border-radius: 2vw;
     z-index: -1; /* Place the pseudo-element behind the content */
 }
 

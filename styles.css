@@ -15,8 +15,8 @@ body::-webkit-scrollbar {
 
 .picture img {
     position: absolute;
-    transform: translate(3vw, -14vw);
-    width: 25vw;
+    transform: translate(3vw, -15vw);
+    width: 27vw;
     border-radius: 100vw;
     border: 1vw solid black;
 }
@@ -58,16 +58,15 @@ body::-webkit-scrollbar {
     margin: 0;
 }
 
-.identity {
+.card {
     border: 0.5vw solid black;
     border-radius: 3vw;
     position: relative;
     margin: 3vw;
-    margin-top: 16vw;
     padding: 1vw;
 }
 
-.identity::before {
+.card::before {
     content: '';
     position: absolute;
     top: 0;
@@ -80,80 +79,26 @@ body::-webkit-scrollbar {
     z-index: -1; /* Place the pseudo-element behind the content */
 }
 
-.identity h1 {
+.card h1, h2 {
     margin: 1vw;
     padding: 1vw;
 }
 
-.identity p {
+.card p {
     margin-left: 2vw;
 }
 
-.about {
-    border: 0.5vw solid black;
-    border-radius: 3vw;
-    position: relative;
-    margin: 3vw;
-    margin-top: 3vw;
-    padding: 1vw;
-}
-
-.about::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(to top, transparent, black);
-    border-top-right-radius: 2vw;
-    border-top-left-radius: 2vw;
-    z-index: -1; /* Place the pseudo-element behind the content */
-}
-
-.about h2 {
-    margin: 1vw;
-    padding: 1vw;
-}
-
-.about p {
-    margin-left: 2vw;
-}
-
-.media {
-    border: 0.5vw solid black;
-    border-radius: 3vw;
-    position: relative;
-    margin: 3vw;
-    margin-top: 3vw;
-    padding: 1vw;
-}
-
-.media::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(to top, transparent, black);
-    border-top-right-radius: 2vw;
-    border-top-left-radius: 2vw;
-    z-index: -1; /* Place the pseudo-element behind the content */
-}
-
-.media h2 {
-    margin: 1vw;
-    padding: 1vw;
-}
-
-.media img {
+.card img {
     margin-left: 2vw;
     width: 15px;
     border-radius: 100vw;
 }
 
-.media a {
+.card a {
     text-decoration: none;
     color: white;
+}
+
+.spacer {
+    margin-top: 16vw;
 }

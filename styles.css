@@ -2,6 +2,8 @@ body {
     margin: 0;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/borrowed_purple_tile.jpg);
     color: white;
+    font-size: large;
+
     backdrop-filter: blur(10px);
 }
 
@@ -9,10 +11,19 @@ body::-webkit-scrollbar {
     width: 0;
 }
 
+@keyframes color_change {
+    0% { border-color: black; }
+    25% { border-color: rgb(26, 0, 40); }
+    50% { border-color: black; }
+    75% { border-color: rgb(26, 0, 40); }
+    100% { border-color: black; }
+}
+
 .banner img {
     width: 100vw;
     aspect-ratio: 3/1;
     border-bottom: 1vw solid black;
+    animation: color_change 10s infinite;
 }
 
 .picture img {
@@ -21,6 +32,7 @@ body::-webkit-scrollbar {
     width: 29vw;
     border-radius: 100vw;
     border: 1vw solid black;
+    animation: color_change 10s infinite;
 }
 
 .achievements {
@@ -29,6 +41,7 @@ body::-webkit-scrollbar {
     right: 0;
     justify-content: flex-end;
     border: 0.5vw solid black;
+    animation: color_change 10s infinite;
     border-radius: 6vw;
     position: absolute;
     padding: 1vw;
@@ -61,6 +74,7 @@ body::-webkit-scrollbar {
 
 .card {
     border: 0.5vw solid black;
+    animation: color_change 10s infinite;
     border-radius: 3vw;
     position: relative;
     margin: 3vw;

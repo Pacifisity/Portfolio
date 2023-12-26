@@ -1,3 +1,4 @@
+/* background image styling and font styling */
 body {
     margin: 0;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/borrowed_purple_tile.jpg);
@@ -7,34 +8,38 @@ body {
     backdrop-filter: blur(10px);
 }
 
+/* hides the scrollbar */
 body::-webkit-scrollbar {
     width: 0;
 }
 
 @keyframes color_change {
     0% { border-color: black; }
-    25% { border-color: rgb(26, 0, 40); }
+    25% { border-color: rgb(255, 255, 255, 0.1); }
     50% { border-color: black; }
-    75% { border-color: rgb(26, 0, 40); }
+    75% { border-color: rgb(255, 255, 255, 0.1); }
     100% { border-color: black; }
 }
 
+/* profile banner image styling */
 .banner img {
     width: 100vw;
     aspect-ratio: 3/1;
-    border-bottom: 1vw solid black;
+    border-bottom: 0.5vw solid black;
     animation: color_change 10s infinite;
 }
 
+/* profile picture image styling */
 .picture img {
     position: absolute;
-    transform: translate(3vw, -17vw);
+    transform: translate(3vw, -16vw);
     width: 29vw;
     border-radius: 100vw;
-    border: 1vw solid black;
+    border: 0.5vw solid black;
     animation: color_change 10s infinite;
 }
 
+/* similar to the card but is made specifically for the achievement icons */
 .achievements {
     height: 10vw;
     display: inline-flex;
@@ -49,6 +54,7 @@ body::-webkit-scrollbar {
     margin-top: 1vw;
 }
 
+/* psuedo element to create a transparent background on the achievement icon */
 .achievements::before {
     content: '';
     position: absolute;
@@ -58,9 +64,10 @@ body::-webkit-scrollbar {
     left: 0;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.5), black);
     border-radius: 5vw;
-    z-index: -1; /* Place the pseudo-element behind the content */
+    z-index: -1;
 }
 
+/* image sizing relative to cards and creating circular icons */
 .achievements img {
     height: 10vw;
     width: 10vw;
@@ -68,19 +75,24 @@ body::-webkit-scrollbar {
     margin-left: 1vw;
 }
 
+/* achievement image icon spacing fix */
 .achievements img:first-child {
     margin: 0;
 }
 
+/* card formatting, spacing and borders */
 .card {
     border: 0.5vw solid black;
     animation: color_change 10s infinite;
     border-radius: 3vw;
     position: relative;
-    margin: 3vw;
+    margin-top: 3vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
     padding: 1vw;
 }
 
+/* psuedo element to create a transparent background on the card */
 .card::before {
     content: '';
     position: absolute;
@@ -90,29 +102,29 @@ body::-webkit-scrollbar {
     left: 0;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.5), black);
     border-radius: 2vw;
-    z-index: -1; /* Place the pseudo-element behind the content */
+    z-index: -1;
 }
 
+/* Moves the header elements off the very edge of the card */
 .card h1, h2 {
     margin: 1vw;
     padding: 1vw;
 }
 
+/* Moves the paragraph elements off the very edge of the card */
 .card p {
     margin-left: 2vw;
 }
 
+/* Moves the icon images and resizes them down to small circles for the cards */
 .card img {
     margin-left: 2vw;
     width: 15px;
     border-radius: 100vw;
 }
 
+/* Makes links look like text */
 .card a {
     text-decoration: none;
     color: white;
-}
-
-.spacer {
-    margin-top: 16vw;
 }

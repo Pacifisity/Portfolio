@@ -1,14 +1,16 @@
-const date = new Date();
-const hours = date.getHours();
+const currentTime = new Date().toLocaleTimeString('en-US', {
+	timeZone: 'America/New_York',
+});
+const hours = new Date(currentTime).getHours();
 
-console.log(date);
+console.log(currentTime);
 
-const dynamicAboutSection = document.getElementById('dynamic_about');
+const myName = document.getElementById('dynamic_about');
 
 if (hours >= 0 && hours <= 8) {
-	dynamicAboutSection.textContent = `🌙 Asleep`;
+	myName.textContent = `🌙 Asleep`;
 } else {
-	dynamicAboutSection.textContent = `☀️ Awake`;
+	myName.textContent = `☀️ Awake`;
 }
 
 // Might not work and get transferred into user's local time, don't know how to fix that... yet

@@ -95,13 +95,26 @@ body::-webkit-scrollbar {
 /* card formatting, spacing and borders */
 .card {
 	border: 0.5vw solid black;
-	animation: color_change 10s infinite;
 	border-radius: 2.5vw;
 	position: relative;
 	margin-top: 3vw;
 	margin-left: 3vw;
 	margin-right: 3vw;
 	padding: 1vw;
+
+	/* card animation stuff */
+	animation: color_change 10s infinite;
+}
+
+.hidden {
+	opacity: 1;
+	filter: blur(3px);
+}
+
+.show {
+	opacity: 1;
+	filter: blur(0);
+	transition: all 1s;
 }
 
 /* psuedo element to create a transparent background on the card */

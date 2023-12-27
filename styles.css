@@ -96,7 +96,7 @@ body::-webkit-scrollbar {
 .card {
 	border: 0.5vw solid black;
 	animation: color_change 10s infinite;
-	border-radius: 3vw;
+	border-radius: 2.5vw;
 	position: relative;
 	margin-top: 3vw;
 	margin-left: 3vw;

@@ -108,7 +108,7 @@ body::-webkit-scrollbar {
 
 .hidden {
 	opacity: 1;
-	filter: blur(3px);
+	filter: blur(50px);
 }
 
 .show {
